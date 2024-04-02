@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.6)
+set(CMAKE_CUDA_COMPILER "/usr/local/cuda-12/bin/nvcc")
 project(telekinesis)
 
-cmake_policy(SET CMP0146 OLD)
-cmake_policy(SET CMP0148 OLD)
+# cmake_policy(SET CMP0146 OLD)
+# cmake_policy(SET CMP0148 OLD)
 
 find_package(CUDA REQUIRED)
 find_package(PythonInterp 3.10 REQUIRED)

@@ -9,7 +9,7 @@ if [ ! -d "build" ]; then
 fi
 
 cd build
-cmake ..
+cmake -DCMAKE_C_COMPILER=/usr/bin/gcc-11 -DCMAKE_CXX_COMPILER=/usr/bin/g++-11 ..
 make -j4
 export PYTHONPATH="$PWD:$PYTHONPATH"
 cd ..
